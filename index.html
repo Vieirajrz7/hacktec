@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação de Jogos Digitais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon-192x192.png">
+</head>
+<body onload="CreateScrollVideos(), CreateScrollImgs()">
+    <div class="container">
+
+        <header class="header">
+            <img src="img/cps-logo.png" alt="CPS Logo" class="logo">
+            <img src="img/etec-logo.png" alt="ETEC Logo" class="logo">
+            <h1 id="nameCourse"><span class="highlight">PROGRAMAÇÃO</span> DE JOGOS DIGITAIS</h1>
+            <button onclick="scrollToBottom()" class="btn-register">CADASTRE-SE</button>
+        </header>
+        
+        <section class="course-info">
+            <img src="img/mascote-agora-vai.png" alt="Curso Icon" class="course-icon">
+            <h2 id="pre-description">O QUE O CURSO ENTREGA?</h2>
+            <div class="text-container">
+                <h3>A ETEC Professora Carmelina Barbosa, em Dracena, São Paulo, é uma escola técnica do Centro Paula Souza, focada em oferecer ensino gratuito e profissionalizante. O curso de Programação de Jogos Digitais integra ensino médio e técnico, capacitando alunos para criar e desenvolver jogos com fundamentos de programação, design e tecnologia digital.</h3>
+            </div>
+            <p class="description">ENSINO MÉDIO INTEGRADO COM <span class="highlight">TÉCNICO</span>.</p>
+            <br>
+            <p class="description">VAGAS DE EMPREGO LOGO APÓS O TERMINO DO <span class="highlight">ENSINO MÉDIO</span>.</p>
+        </section>
+
+        <!--VIDEOS-->
+        <h2>DEPOIMENTOS</h2>
+        <section class="video-scroll-section">
+            <div class="video-scroll-container" id="videoContainer">
+            </div>
+        </section>
+
+        <!--IMAGES-->
+        <h2>GALERIA</h2>
+        <section class="img-scroll-section">
+            <div class="img-scroll-container" id="imgContainer"></div>
+        </section>
+    </div>
+
+    <h2 id="interessed">FICOU INTERESSADO? INSCREVA-SE</h2>
+    <section class="register">
+        <form action="" method="POST">
+            <label for="name">Insira seu nome:</label>
+            <input type="text" id="name">
+    
+            <label for="age">Insira sua idade:</label>
+            <input type="text" id="age">
+
+            <label for="city">Escolha sua cidade</label>
+            <select id="city">
+                <option value="">Dracena</option>
+                <option value="">Tupi Paulista</option>
+                <option value="">Junqueirópolis</option>
+                <option value="">Monte Castelo</option>
+                <option value="">Paulicéia</option>
+                <option value="">Ouro Verde</option>
+                <option value="">São João do Pau D'Alho</option>
+                <option value="">Panorama</option>
+                <option value="">Santa Mercedes</option>
+                <option value="">Nova Guataporanga</option>
+            </select>
+    
+            <label for="phoneNumber">Insira seu número de telefone:</label>
+            <input type="tel" id="phoneNumber">
+    
+            <label for="course">Escolha seu curso:</label>
+            <select id="course">
+                <option value="">Programação de Jogos Digitais</option>
+                <option value="">Agropecuária</option>
+                <option value="">Química</option>
+            </select>
+    
+            <input type="submit" value="Cadastrar">
+        </form>
+    </section>
+    
+    <a href="https://www.whatsapp.com/"><img src="img/zapzap.png" alt="" id="whatsappLogo"></a>
+    <a href="https://www.instagram.com/eteccarmelinabarbosa/"><img src="img/insta.png" alt="" id="instaLogo"></a>
+
+    <footer>
+        <p>© 2024 Jogos Digitais. Todos os direitos reservados.</p>
+      </footer>
+      
+    <script src="script.js"></script>
+</body>
+</html>

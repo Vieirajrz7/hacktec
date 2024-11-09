@@ -1,0 +1,22 @@
+{
+    "name": "Jogos Digitais",
+    "short_name": "Jogos",
+    "description": "Uma aplicação web simples.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#333",
+    "theme_color": "#333",
+    "icons": [
+      {
+        "src": "img/mascote-agora-vai.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "img/mascote-agora-vai.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/desktop-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+#nameCourse {
+    font-size: 3.4rem;
+    color: #000000;
+    margin-top: 10px;
+    font-family: "Squada One", sans-serif;
+}
+
+.btn-register {
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    border: 4px solid #fff;
+    border-radius: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.course-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.course-icon {
+    width: 360px;
+    border-radius: 35%;
+}
+
+#pre-description {
+    font-size: 1.6rem;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
+.highlight {
+    color: #d10000;
+    font-weight: bold;
+}
+
+.section-placeholder {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.description {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.video-scroll-section {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 20px;
+}
+
+.video-scroll-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.video-item {
+    flex-shrink: 0;
+    max-width: 90%;
+}
+
+.video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img {
+    width: 80vw;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.img-scroll-section {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 20px;
+}
+
+.img-scroll-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.img-item {
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilização do formulário */
+.register form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register input[type="text"],
+.register input[type="tel"],
+.register select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #333;
+}
+
+.register input[type="submit"] {
+    padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #d10000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+select {
+    background: #fff;
+}
+
+#interessed {
+    font-size: 1.7rem;
+}
+
+#whatsappLogo {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 55px;
+}
+
+#instaLogo {
+    position: fixed;
+    bottom: 82px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 55px;
+}
+
+
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 30px 0;
+    font-size: 14px;
+    margin-top: 20px; /* Espaço entre o conteúdo principal e o rodapé */
+  }
+  
+  footer p {
+    margin: 0;
+  }
+    
+
+/* Responsividade para telas maiores */
+/* Responsividade para telas maiores */
+@media (min-width: 768px) {
+    .container {
+        max-width: 80%; /* Aumenta a largura máxima no desktop */
+    }
+
+    .header {
+        padding: 30px 0;
+    }
+
+    #nameCourse {
+        font-size: 4rem;
+    }
+    .img {
+        
+        height: 120px;
+        object-fit: cover;
+    }
+
+    .btn-register {
+        font-size: 1.5rem;
+        padding: 12px 30px;
+    }
+
+    .course-icon {
+        width: 450px; 
+    }
+
+    .text-container {
+        max-width: 950px;
+        margin: 0 auto; 
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    .text-container h3 {
+        font-size: 1.2rem; 
+        line-height: 1.5; 
+    }
+    
+   
+    .video-item,
+    .img-item {
+        max-width: 45%; 
+    }
+
+    .video-item video,
+    .img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .video-scroll-container,
+    .img-scroll-container {
+        gap: 20px;
+    }
+
+    .register {
+        max-width: 50%;
+        margin-bottom: 50px;
+    }
+
+    #pre-description {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 2rem;
+    }
+
+    .logo {
+        width: 120px;
+    }
+}
